@@ -1,0 +1,24 @@
+{
+ "chat_lines_read": 240400,
+ "chat_lines_kept": 106459,
+ "parts": {
+  "source_clean": 16274,
+  "source_fragments": 16274,
+  "source_no_punct": 16274,
+  "source_asr": 16274,
+  "source_asr2": 16274,
+  "chat_negative": 18000,
+  "chat_negative_no_punct": 18000,
+  "chat_negative_asr": 18000,
+  "chat_pii": 12000,
+  "chat_pii_no_punct": 12000,
+  "chat_pii_asr": 12000
+ },
+ "train_rows": 173193,
+ "dev_rows": {
+  "clean": 2654,
+  "no_punct": 2647,
+  "asr": 2671
+ },
+ "train_rows_without_pii": 57785
+}

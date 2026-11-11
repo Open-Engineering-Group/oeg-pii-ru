@@ -1,0 +1,70 @@
+{
+  "exact_21_micro": {
+    "p": 74.1,
+    "r": 31.8,
+    "f1": 44.5
+  },
+  "overlap_person_location": {
+    "p": 92.8,
+    "r": 74.2,
+    "f1": 82.5
+  },
+  "any_type_recall": 41.3,
+  "missed_spans": 3289,
+  "gold_spans": 5605,
+  "sentences_without_pii": 371,
+  "false_alarm_sentences": 6,
+  "per_type_exact_f1": {
+    "BIRTH_CERTIFICATE": 5.5,
+    "CITY": 70.4,
+    "COUNTRY": 76.9,
+    "CREDIT_CARD": 0.0,
+    "DISTRICT": 74.5,
+    "DRIVER_LICENSE": 7.6,
+    "EMAIL": 0.0,
+    "FIRST_NAME": 76.3,
+    "HOUSE": 42.7,
+    "INN": 1.5,
+    "IP_ADDRESS": 0.0,
+    "LAST_NAME": 65.0,
+    "MIDDLE_NAME": 94.1,
+    "MILITARY_ID": 13.6,
+    "OMS": 0.0,
+    "PASSPORT": 2.6,
+    "PHONE": 0.0,
+    "REGION": 86.9,
+    "SNILS": 0.0,
+    "STREET": 80.5,
+    "URL": 12.3
+  },
+  "per_type_any_recall": {
+    "BIRTH_CERTIFICATE": 8.5,
+    "CITY": 72.3,
+    "COUNTRY": 78.5,
+    "CREDIT_CARD": 0.0,
+    "DISTRICT": 90.1,
+    "DRIVER_LICENSE": 6.5,
+    "EMAIL": 46.2,
+    "FIRST_NAME": 71.9,
+    "HOUSE": 64.4,
+    "INN": 1.5,
+    "IP_ADDRESS": 0.0,
+    "LAST_NAME": 61.7,
+    "MIDDLE_NAME": 98.4,
+    "MILITARY_ID": 13.3,
+    "OMS": 0.0,
+    "PASSPORT": 6.9,
+    "PHONE": 0.6,
+    "REGION": 93.8,
+    "SNILS": 0.4,
+    "STREET": 81.3,
+    "URL": 73.3
+  },
+  "samples": [
+    "ооо ремонт и обслуживание ул рокоссовского дом десять офис один пять вольск один девять один ноль два три танзания тел семь восемьсот двенадцать девяносто восемь семь шесть пять четыре три www remont ",
+    "архипов reginald святославович",
+    "эх опять экзамены мой инн девять семь три шесть девять один восемь три один два один четыре а я уже не могу",
+    "кадровик сделала ошибку вбивая снилс двенадцать три четыреста пятьдесят шесть семьдесят восемь девяносто один",
+    "кредит онлайн http двоеточие слэш слэш тридцать один сто тридцать шесть сто девяносто восемнадцать четыре сорок четыре три admin"
+  ]
+}

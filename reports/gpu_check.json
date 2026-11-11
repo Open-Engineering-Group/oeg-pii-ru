@@ -1,0 +1,75 @@
+{
+  "python": "3.13.17",
+  "machine": "ARM64",
+  "torch": "2.15.0+cu134",
+  "cuda_build": "13.4",
+  "cuda_available": true,
+  "device": "NVIDIA RTX Spark N1X (6144-core Blackwell RTX GPU)",
+  "matmul_4000_seconds": 0.122,
+  "fp32": {
+    "seconds_per_step": 0.224,
+    "minutes_per_epoch": 4.0,
+    "hours_10_epochs": 0.67,
+    "peak_memory_gb": 5.71,
+    "lengths": [
+      32,
+      372,
+      64,
+      343,
+      53,
+      42,
+      99,
+      57,
+      205,
+      169,
+      59,
+      64,
+      48,
+      98,
+      97,
+      113,
+      69,
+      116,
+      274,
+      226
+    ],
+    "first_last_loss": [
+      0.0004,
+      0.0077
+    ],
+    "finite_losses": true
+  },
+  "bf16": {
+    "seconds_per_step": 0.129,
+    "minutes_per_epoch": 2.3,
+    "hours_10_epochs": 0.38,
+    "peak_memory_gb": 4.55,
+    "lengths": [
+      32,
+      372,
+      64,
+      343,
+      53,
+      42,
+      99,
+      57,
+      205,
+      169,
+      59,
+      64,
+      48,
+      98,
+      97,
+      113,
+      69,
+      116,
+      274,
+      226
+    ],
+    "first_last_loss": [
+      0.0004,
+      0.0099
+    ],
+    "finite_losses": true
+  }
+}

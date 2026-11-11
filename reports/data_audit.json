@@ -1,0 +1,750 @@
+{
+ "source": {
+  "rows": 17137,
+  "rows_without_pii": 1237,
+  "tokens_median": 19,
+  "tokens_p95": 52,
+  "exact_duplicate_rows": 40,
+  "top_shapes_after_masking_digits": [
+   [
+    "температура: +#°c , влажность: #%",
+    7
+   ],
+   [
+    "заказ №# от #-#-#",
+    5
+   ],
+   [
+    "дата: #-#-# номер: #",
+    5
+   ],
+   [
+    "код ошибки: err-# — обратитесь в поддержку",
+    4
+   ],
+   [
+    "версия: # . # . #",
+    3
+   ],
+   [
+    "рейс su-# , время вылета #:#",
+    3
+   ],
+   [
+    "артикул товара: # , цена: # руб .",
+    3
+   ],
+   [
+    "инн: # , огрн: #",
+    3
+   ]
+  ],
+  "distinct_shapes": 17011,
+  "ambiguous_tokens": 94,
+  "ambiguous_examples": [
+   [
+    "1234",
+    {
+     "CREDIT_CARD": 246,
+     "OMS": 181,
+     "PASSPORT": 95
+    }
+   ],
+   [
+    "123456",
+    {
+     "PASSPORT": 256,
+     "DRIVER_LICENSE": 134,
+     "O": 130
+    }
+   ],
+   [
+    "123",
+    {
+     "SNILS": 314,
+     "O": 145,
+     "PHONE": 35
+    }
+   ],
+   [
+    "789",
+    {
+     "SNILS": 320,
+     "O": 73,
+     "PHONE": 4
+    }
+   ],
+   [
+    "456",
+    {
+     "SNILS": 314,
+     "O": 51,
+     "PASSPORT": 14
+    }
+   ],
+   [
+    "дом",
+    {
+     "HOUSE": 303,
+     "O": 36
+    }
+   ],
+   [
+    "районе",
+    {
+     "DISTRICT": 224,
+     "O": 27
+    }
+   ],
+   [
+    "567890",
+    {
+     "PASSPORT": 135,
+     "O": 49,
+     "BIRTH_CERTIFICATE": 32
+    }
+   ],
+   [
+    "1234567",
+    {
+     "MILITARY_ID": 149,
+     "O": 19,
+     "PASSPORT": 8
+    }
+   ],
+   [
+    "лет",
+    {
+     "O": 117,
+     "STREET": 15
+    }
+   ],
+   [
+    "1234567890",
+    {
+     "INN": 65,
+     "O": 51,
+     "PASSPORT": 14
+    }
+   ],
+   [
+    "дома",
+    {
+     "O": 90,
+     "HOUSE": 35
+    }
+   ],
+   [
+    "789012",
+    {
+     "BIRTH_CERTIFICATE": 57,
+     "PASSPORT": 37,
+     "DRIVER_LICENSE": 27
+    }
+   ],
+   [
+    "456789",
+    {
+     "DRIVER_LICENSE": 63,
+     "BIRTH_CERTIFICATE": 37,
+     "O": 19
+    }
+   ],
+   [
+    "5000",
+    {
+     "O": 59,
+     "CREDIT_CARD": 58
+    }
+   ],
+   [
+    "улице",
+    {
+     "STREET": 79,
+     "O": 32
+    }
+   ],
+   [
+    "офис",
+    {
+     "O": 88,
+     "HOUSE": 20
+    }
+   ],
+   [
+    "7890",
+    {
+     "OMS": 42,
+     "CREDIT_CARD": 38,
+     "O": 19
+    }
+   ],
+   [
+    "новая",
+    {
+     "O": 52,
+     "STREET": 27,
+     "COUNTRY": 5
+    }
+   ],
+   [
+    "168",
+    {
+     "IP_ADDRESS": 43,
+     "O": 35,
+     "HOUSE": 5
+    }
+   ],
+   [
+    "округ",
+    {
+     "DISTRICT": 69,
+     "O": 13
+    }
+   ],
+   [
+    "192",
+    {
+     "IP_ADDRESS": 47,
+     "O": 32,
+     "HOUSE": 2
+    }
+   ],
+   [
+    "9876543210",
+    {
+     "INN": 46,
+     "O": 16,
+     "PHONE": 13
+    }
+   ],
+   [
+    "улица",
+    {
+     "STREET": 48,
+     "O": 26
+    }
+   ],
+   [
+    "4567",
+    {
+     "CREDIT_CARD": 46,
+     "OMS": 17,
+     "O": 11
+    }
+   ]
+  ],
+  "rows_with_split_email_or_domain": 12342
+ },
+ "per_type": {
+  "BIRTH_CERTIFICATE": {
+   "train_spans": 1590,
+   "train_unique": 307,
+   "test_spans": 341,
+   "test_values_seen_in_train_pct": 77.4,
+   "top_train_values": [
+    "987654",
+    "ii - кз",
+    "123456",
+    "iv - ом",
+    "112233"
+   ]
+  },
+  "CITY": {
+   "train_spans": 2669,
+   "train_unique": 836,
+   "test_spans": 339,
+   "test_values_seen_in_train_pct": 20.9,
+   "top_train_values": [
+    "казань",
+    "пермь",
+    "томск",
+    "самара",
+    "краснодар"
+   ]
+  },
+  "COUNTRY": {
+   "train_spans": 1999,
+   "train_unique": 399,
+   "test_spans": 242,
+   "test_values_seen_in_train_pct": 75.6,
+   "top_train_values": [
+    "россия",
+    "россии",
+    "казахстан",
+    "беларусь",
+    "мексика"
+   ]
+  },
+  "CREDIT_CARD": {
+   "train_spans": 989,
+   "train_unique": 464,
+   "test_spans": 203,
+   "test_values_seen_in_train_pct": 26.6,
+   "top_train_values": [
+    "4276 1234 5678 9012",
+    "5536 - 9137 - 5000 - 4321",
+    "* * * * * * * * * * * * 5678",
+    "* * * * * * * * * * * * 9012",
+    "4276123456789012"
+   ]
+  },
+  "DISTRICT": {
+   "train_spans": 1696,
+   "train_unique": 806,
+   "test_spans": 161,
+   "test_values_seen_in_train_pct": 24.8,
+   "top_train_values": [
+    "центральный район",
+    "кировском район",
+    "петроградский районе",
+    "советском район",
+    "хамовниках район"
+   ]
+  },
+  "DRIVER_LICENSE": {
+   "train_spans": 1688,
+   "train_unique": 298,
+   "test_spans": 371,
+   "test_values_seen_in_train_pct": 76.5,
+   "top_train_values": [
+    "123456",
+    "987654",
+    "654321",
+    "112233",
+    "77 19"
+   ]
+  },
+  "EMAIL": {
+   "train_spans": 1755,
+   "train_unique": 1721,
+   "test_spans": 221,
+   "test_values_seen_in_train_pct": 0.9,
+   "top_train_values": [
+    "tickets@cloudservice . ru",
+    "tretyakov . s@personal . ru",
+    "accounting@partner-firm . ru",
+    "kuzn . dmitry@mail . ru",
+    "support@delivery-track . ru"
+   ]
+  },
+  "FIRST_NAME": {
+   "train_spans": 3876,
+   "train_unique": 957,
+   "test_spans": 499,
+   "test_values_seen_in_train_pct": 53.1,
+   "top_train_values": [
+    "виктор",
+    "андрей",
+    "сергей",
+    "артём",
+    "максим"
+   ]
+  },
+  "HOUSE": {
+   "train_spans": 1906,
+   "train_unique": 1036,
+   "test_spans": 163,
+   "test_values_seen_in_train_pct": 47.9,
+   "top_train_values": [
+    "д . 1",
+    "д . 5",
+    "д . 15",
+    "д . 10",
+    "10"
+   ]
+  },
+  "INN": {
+   "train_spans": 1163,
+   "train_unique": 325,
+   "test_spans": 263,
+   "test_values_seen_in_train_pct": 37.3,
+   "top_train_values": [
+    "123456789012",
+    "771234567890",
+    "7701234567",
+    "1234567890",
+    "112233445566"
+   ]
+  },
+  "IP_ADDRESS": {
+   "train_spans": 939,
+   "train_unique": 879,
+   "test_spans": 155,
+   "test_values_seen_in_train_pct": 0.0,
+   "top_train_values": [
+    "fe80::1%vlan10",
+    "fe80::2%br0",
+    "fe80::dead:beef%vlan10",
+    "fe80::1ff:fe23:4567:890a%br0",
+    "fe80::2%vlan10"
+   ]
+  },
+  "LAST_NAME": {
+   "train_spans": 3361,
+   "train_unique": 1056,
+   "test_spans": 457,
+   "test_values_seen_in_train_pct": 28.0,
+   "top_train_values": [
+    "петров",
+    "козлов",
+    "кузнецов",
+    "иванов",
+    "петрова"
+   ]
+  },
+  "MIDDLE_NAME": {
+   "train_spans": 2344,
+   "train_unique": 520,
+   "test_spans": 308,
+   "test_values_seen_in_train_pct": 55.5,
+   "top_train_values": [
+    "викторович",
+    "дмитриевич",
+    "сергеевич",
+    "борисович",
+    "юрьевич"
+   ]
+  },
+  "MILITARY_ID": {
+   "train_spans": 1442,
+   "train_unique": 133,
+   "test_spans": 278,
+   "test_values_seen_in_train_pct": 81.7,
+   "top_train_values": [
+    "мз",
+    "1234567",
+    "9876543",
+    "ра",
+    "вг"
+   ]
+  },
+  "OMS": {
+   "train_spans": 742,
+   "train_unique": 254,
+   "test_spans": 170,
+   "test_values_seen_in_train_pct": 66.5,
+   "top_train_values": [
+    "7774 1234 5678 9012",
+    "7774123456789012",
+    "7774 - 1234 - 5678 - 9012",
+    "9876543210987654",
+    "1122334455667788"
+   ]
+  },
+  "PASSPORT": {
+   "train_spans": 2540,
+   "train_unique": 529,
+   "test_spans": 494,
+   "test_values_seen_in_train_pct": 78.7,
+   "top_train_values": [
+    "123456",
+    "987654",
+    "112233",
+    "4503",
+    "567890"
+   ]
+  },
+  "PHONE": {
+   "train_spans": 2134,
+   "train_unique": 1871,
+   "test_spans": 173,
+   "test_values_seen_in_train_pct": 8.7,
+   "top_train_values": [
+    "+",
+    "-",
+    "88001234567",
+    "+79031234567",
+    "88005553535"
+   ]
+  },
+  "REGION": {
+   "train_spans": 1650,
+   "train_unique": 611,
+   "test_spans": 176,
+   "test_values_seen_in_train_pct": 19.3,
+   "top_train_values": [
+    "свердловской области",
+    "московской области",
+    "московская область",
+    "кемеровской области",
+    "омской области"
+   ]
+  },
+  "SNILS": {
+   "train_spans": 924,
+   "train_unique": 211,
+   "test_spans": 223,
+   "test_values_seen_in_train_pct": 58.7,
+   "top_train_values": [
+    "123 - 456 - 789 01",
+    "98765432101",
+    "111 222 333 44",
+    "555 . 666 . 777 . 88",
+    "12345678901"
+   ]
+  },
+  "STREET": {
+   "train_spans": 2190,
+   "train_unique": 1393,
+   "test_spans": 171,
+   "test_values_seen_in_train_pct": 27.5,
+   "top_train_values": [
+    "ул . ленина",
+    "ул . лесная",
+    "ул . гагарина",
+    "ул . кирова",
+    "ул . мира"
+   ]
+  },
+  "URL": {
+   "train_spans": 2090,
+   "train_unique": 1930,
+   "test_spans": 206,
+   "test_values_seen_in_train_pct": 11.2,
+   "top_train_values": [
+    "/",
+    ".",
+    "hotel-central . nsk . ru",
+    "http://habr . com/page",
+    "delivery-track . ru"
+   ]
+  }
+ },
+ "names_script": {
+  "train": {
+   "latin": 491,
+   "cyrillic": 9098
+  },
+  "test": {
+   "latin": 318,
+   "cyrillic": 946
+  }
+ },
+ "built": {
+  "rows": 83029,
+  "rows_without_pii": 3679,
+  "spans_per_type": {
+   "FIRST_NAME": 18180,
+   "LAST_NAME": 15800,
+   "CITY": 12690,
+   "PASSPORT": 11975,
+   "MIDDLE_NAME": 11010,
+   "STREET": 10385,
+   "PHONE": 10009,
+   "URL": 9887,
+   "COUNTRY": 9545,
+   "HOUSE": 8989,
+   "BANK_ACCOUNT": 8948,
+   "BIK": 8864,
+   "CORR_ACCOUNT": 8857,
+   "KPP": 8793,
+   "EMAIL": 8277,
+   "DISTRICT": 8080,
+   "DRIVER_LICENSE": 7955,
+   "REGION": 7770,
+   "BIRTH_CERTIFICATE": 7500,
+   "MAX_NICK": 7263,
+   "TG_NICK": 7225,
+   "MILITARY_ID": 6860,
+   "INN": 5560,
+   "CREDIT_CARD": 4700,
+   "IP_ADDRESS": 4470,
+   "SNILS": 4385,
+   "OMS": 3545,
+   "DATE_OF_BIRTH": 3520
+  },
+  "unique_per_type": {
+   "PASSPORT": 1464,
+   "KPP": 8793,
+   "MILITARY_ID": 303,
+   "CREDIT_CARD": 1832,
+   "EMAIL": 6270,
+   "URL": 7067,
+   "INN": 981,
+   "LAST_NAME": 1035,
+   "FIRST_NAME": 937,
+   "MIDDLE_NAME": 510,
+   "OMS": 1059,
+   "COUNTRY": 422,
+   "REGION": 617,
+   "CITY": 895,
+   "MAX_NICK": 7216,
+   "DRIVER_LICENSE": 815,
+   "BIK": 8862,
+   "SNILS": 914,
+   "PHONE": 5663,
+   "IP_ADDRESS": 2997,
+   "BANK_ACCOUNT": 8948,
+   "CORR_ACCOUNT": 8857,
+   "HOUSE": 3083,
+   "STREET": 2327,
+   "DATE_OF_BIRTH": 3510,
+   "DISTRICT": 875,
+   "BIRTH_CERTIFICATE": 685,
+   "TG_NICK": 7199
+  },
+  "top_previous_word": {
+   "TG_NICK": [
+    [
+     "телеграм",
+     2759
+    ],
+    [
+     "тг",
+     1152
+    ],
+    [
+     "я",
+     592
+    ],
+    [
+     "телеге",
+     585
+    ],
+    [
+     "tg",
+     437
+    ]
+   ],
+   "MAX_NICK": [
+    [
+     "max",
+     2989
+    ],
+    [
+     "макс",
+     1856
+    ],
+    [
+     "максе",
+     1257
+    ],
+    [
+     "макс:",
+     167
+    ],
+    [
+     "max:",
+     144
+    ]
+   ],
+   "DATE_OF_BIRTH": [
+    [
+     "рождения",
+     1122
+    ],
+    [
+     "родился",
+     321
+    ],
+    [
+     "родилась",
+     302
+    ],
+    [
+     "я",
+     301
+    ],
+    [
+     "др",
+     301
+    ]
+   ],
+   "BANK_ACCOUNT": [
+    [
+     "счёт",
+     1899
+    ],
+    [
+     "счет",
+     981
+    ],
+    [
+     "с",
+     950
+    ],
+    [
+     "рс",
+     934
+    ],
+    [
+     "получателя",
+     932
+    ]
+   ],
+   "BIK": [
+    [
+     "бик",
+     3345
+    ],
+    [
+     "код",
+     1930
+    ],
+    [
+     "банка",
+     1871
+    ],
+    [
+     "бик:",
+     464
+    ],
+    [
+     ".",
+     94
+    ]
+   ],
+   "KPP": [
+    [
+     "кпп",
+     4478
+    ],
+    [
+     "постановки",
+     2567
+    ],
+    [
+     "кпп:",
+     629
+    ],
+    [
+     ".",
+     54
+    ],
+    [
+     "один",
+     34
+    ]
+   ],
+   "CORR_ACCOUNT": [
+    [
+     "счёт",
+     2500
+    ],
+    [
+     "кс",
+     1297
+    ],
+    [
+     "с",
+     1295
+    ],
+    [
+     "счет",
+     1269
+    ],
+    [
+     "к/с",
+     937
+    ]
+   ]
+  },
+  "rows_with_punctuation": 32542,
+  "rows_with_digits": 39290
+ },
+ "handmade": {
+  "rows": 81,
+  "spans": 85
+ }
+}
